@@ -1,28 +1,39 @@
-.btn {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: 0.8em 1em calc(0.8em + 3px);
-  border-radius: 3px;
-  background: rgb(64, 199, 129);
-  box-shadow: 0 -3px rgb(53, 167, 110) inset;
-  transition: 0.2s;
-  margin: 15px 0;
+.Form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
-
-.btn:hover {
-  background: rgb(53, 167, 110);
+.Label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-
-.btn:active {
-  background: rgb(33, 147, 90);
-  box-shadow: 0 3px rgb(33, 147, 90) inset;
+.Input {
+  max-width: 200px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #d8d8d8;
 }
-
-.btn:nth-child(2n) {
-  margin: 0 5px;
+.Input:focus {
+  box-shadow: 1px 2px 2px #27483f;
 }
-
-.btn:first-letter {
-  text-transform: uppercase;
+.Button {
+  max-width: 100px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.Button:hover,
+.Button:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #05ff12;
+  border: 1px solid transparent;
+  color: #fff;
 }
