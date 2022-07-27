@@ -34,6 +34,8 @@ const App = () => {
       name,
       number,
     };
+
+
     const alreadyFind = contacts.find(contact => contact.name === name);
 
     alreadyFind

@@ -16,7 +16,7 @@ const ContactFilter = ({ value, onFindContact }) => {
 };
 
 ContactFilter.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   onFindContact: PropTypes.func.isRequired,
 };
 
