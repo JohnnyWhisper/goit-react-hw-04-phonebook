@@ -23,7 +23,7 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-
+    
     onSubmit({ name, number });
     resetInput();
   };

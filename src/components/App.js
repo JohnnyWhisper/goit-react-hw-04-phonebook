@@ -36,7 +36,7 @@ const App = () => {
     };
 
 
-    const alreadyFind = contacts.find(contact => contact.name === name);
+    const alreadyFind = contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase());
 
     alreadyFind
       ? toast.error(`${name} is already in contacts.`)
